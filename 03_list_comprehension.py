@@ -1,11 +1,14 @@
-# Create a list containing the table of 5
 
 
-# table = []
+# range(1,11)
+# print(range(1, 11))
 
-# for i in range(1, 11):
-#     table.append(5*i)
+print(list(range(1, 11)))
 
-table = [5*i for i in range(1, 11)]
+for i in range(1, 11):
+    print(i)
 
-print(table)
+print("print-reverse")
+
+for i in range(10, 0, -1):
+    print(i)

@@ -30,64 +30,58 @@ list[a:b] → slice (a included, b excluded)
 
 
 
-# List of marks
+# List that stores students' marks
 marks = [54, 23, 64, 93, 32]
 
 # 1. Question: What is the first mark?
 print("1. What is the first mark?")
-# marks[0] means index 0 ka value (first element)
+# marks[0] gives the value at index 0 (first element)
 print(marks[0])
 
 
 # 2. Question: What is the last mark?
 print("2. What is the last mark?")
-# -1 ka matlab last element
+# -1 refers to the last element in the list
 print(marks[-1])
 
 
 # 3. Question: What is the highest mark?
 print("3. What is the highest mark?")
-# max() function list ka sabse bada number deta hai
+# max() returns the largest value from the list
 print(max(marks))
 
 
 # 4. Question: What is the lowest mark?
 print("4. What is the lowest mark?")
-# min() function list ka sabse chhota number deta hai
+# min() returns the smallest value from the list
 print(min(marks))
 
 
 # 5. Question: How many marks are there?
 print("5. How many marks are there?")
-# len() function list me total elements count karta hai
+# len() returns the total number of elements in the list
 print(len(marks))
 
 
 # 6. Question: What mark is at index 2?
 print("6. What mark is at index 2?")
-# marks[2] means index 2 ka value
+# marks[2] gives the value stored at index 2
 print(marks[2])
 
 
 # 7. Question: What are the marks from index 2 to 4?
 print("7. What are the marks from index 2 to 4?")
-# slicing: index 2 se start, 4 se pehle tak
+# Slicing: start from index 2 and stop before index 4
 print(marks[2:4])
 
 
-# 8. Question: Are there any marks below 40?
-print("8. Are there any marks below 40?")
-# loop ke through 40 se chhote marks nikal rahe hain
-print([m for m in marks if m < 40])
 
 
-# 9. Question: What is the average of all marks?
+
+# 8. Question: What is the average of all marks?
 print("9. What is the average of all marks?")
-# sum() se total, len() se count, phir divide
+# sum() adds all marks, len() counts them, division gives average
 print(sum(marks) / len(marks))
 
 
-# 10. Question: Are all marks above 50?
-print("10. Are all marks above 50?")
-# all() check karta hai sab values 50 se badi hain ya nahi
-print(all(m > 50 for m in marks))
+
